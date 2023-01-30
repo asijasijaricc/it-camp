@@ -1,0 +1,18 @@
+body {
+  background-color: #df9f8a;
+}
+
+table {
+  background-color: #c6d0d0;
+  border-style: hidden;
+  border-radius: 5px;
+}
+
+tr,
+td {
+  border: 0.3px dashed #dfac4f;
+}
+
+tr:nth-child(even) {
+  background-color: #c6e7ee;
+}

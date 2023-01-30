@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8a2be2;
+}
+
+.first {
+  /* background-color: #5d217b; */
+  background-image: url(https://images.pexels.com/photos/144171/pexels-photo-144171.jpeg);
+  height: 300px;
+  background-repeat: no-repeat;
+  /* background-size: 700px 400px; prva vrednost se odnosi na sirinu, a druga na visinu */
+  /* background-size: 100% 100%; */
+  /* background-size: cover; */
+  background-size: contain;
+}
+
+ul {
+  margin: auto;
+  width: 500px;
+  list-style-position: inside;
+}
+
+li:nth-of-type(odd) {
+  background-color: #5d155d;
+}
+
+li:nth-of-type(even) {
+  background-color: #543671;
+}
+
+li:nth-last-child(1) {
+  background-color: #a40fa4;
+}

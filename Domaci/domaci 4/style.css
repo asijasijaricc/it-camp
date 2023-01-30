@@ -1,0 +1,17 @@
+body {
+  background-color: #94c894;
+}
+
+.prva {
+  margin: 40px 40px 0px;
+  width: 300px;
+  height: 200px;
+  background-color: #1a541a;
+  border: 2px solid green;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 6px 6px 12px rgba(0, 1, 44, 0.6);
+  overflow: auto;
+  overflow-x: hidden;
+  display: inline-block;
+}
