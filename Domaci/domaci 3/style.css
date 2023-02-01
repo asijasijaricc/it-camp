@@ -1,0 +1,104 @@
+* {
+  padding: 0pxs;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #64b064;
+}
+
+.prva {
+  margin: 40px 40px 40px 80px;
+  width: 210px;
+  height: 353px;
+  background-color: #d5d5c4;
+  border: hidden;
+  padding: 10px;
+  box-shadow: 6px 6px 12px rgba(0, 1, 44, 0.6);
+  overflow: auto;
+  overflow-x: hidden;
+  display: inline-block;
+  text-align: center;
+}
+
+.druga {
+  margin: 40px 40px 40px;
+  width: 210px;
+  height: 353px;
+  background-color: #d5d5c4;
+  border: hidden;
+  padding: 10px;
+  box-shadow: 6px 6px 12px rgba(0, 1, 44, 0.6);
+  overflow: auto;
+  overflow-x: hidden;
+  display: inline-block;
+  text-align: center;
+}
+
+.treca {
+  margin: 40px 40px 40px;
+  width: 210px;
+  height: 353px;
+  background-color: #d5d5c4;
+  border: hidden;
+  padding: 10px;
+  box-shadow: 6px 6px 12px rgba(0, 1, 44, 0.6);
+  overflow: auto;
+  overflow-x: hidden;
+  display: inline-block;
+  text-align: center;
+}
+
+.cetvrta {
+  margin: 40px 40px 40px;
+  width: 210px;
+  height: 353px;
+  background-color: #d5d5c4;
+  border: hidden;
+  padding: 10px;
+  box-shadow: 6px 6px 12px rgba(0, 1, 44, 0.6);
+  overflow: auto;
+  overflow-x: hidden;
+  display: inline-block;
+  text-align: center;
+}
+
+.naslov {
+  color: #115011;
+}
+
+.podnaslov {
+  color: #64b064;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #115011;
+  width: 100%;
+  height: 80px;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 17px;
+  text-transform: uppercase;
+}

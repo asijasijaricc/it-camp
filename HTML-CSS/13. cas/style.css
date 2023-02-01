@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
+/* Drugi nacin importovanja eksternog fonta slova */
+
+* {
+  margin: 0px;
+}
+
+body {
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  background-color: #deb887;
+  width: 500px;
+  height: 400px;
+  margin: 50px 10px 0px;
+  padding: 20px;
+  /* display: inline-block; */
+}
+
+/* .second {
+  display: none;
+  /* visibility: hidden; */
+/* } */
+
+.main h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.main p {
+  text-align: justify;
+  text-indent: 20px;
+  font-size: 22px;
+  text-align-last: right;
+  line-height: 30px;
+}
+
+.icon {
+  color: blueviolet;
+  font-size: xx-large;
+  margin-left: 45%;
+}
