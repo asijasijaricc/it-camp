@@ -1,0 +1,42 @@
+* {
+  background-color: #ededcd;
+  margin: 0px;
+}
+
+.card {
+  margin-top: 50px;
+  margin-left: 420px;
+  margin-right: 250px;
+  width: 400px;
+  height: 550px;
+  border-radius: 40px;
+  background-color: #ffe4c4;
+  border: 1.7px dotted;
+  display: inline-block;
+}
+
+.card img {
+  width: 400px;
+  height: 200px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.card h2 {
+  background-color: #ffe4c4;
+}
+
+.card p {
+  background-color: #ffe4c4;
+}
+
+.fa-solid {
+  background-color: #ffe4c4;
+}
+
+.fa-regular {
+  background-color: #ffe4c4;
+}
+
+.fa-brands {
+  background-color: #ffe4c4;
+}
