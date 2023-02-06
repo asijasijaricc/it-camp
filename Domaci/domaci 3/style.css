@@ -1,5 +1,5 @@
 * {
-  padding: 0pxs;
+  padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
@@ -10,8 +10,8 @@ body {
 
 .prva {
   margin: 40px 40px 40px 80px;
-  width: 210px;
-  height: 353px;
+  width: 212px;
+  height: 383px;
   background-color: #d5d5c4;
   border: hidden;
   padding: 10px;
@@ -24,8 +24,8 @@ body {
 
 .druga {
   margin: 40px 40px 40px;
-  width: 210px;
-  height: 353px;
+  width: 212px;
+  height: 383px;
   background-color: #d5d5c4;
   border: hidden;
   padding: 10px;
@@ -38,8 +38,8 @@ body {
 
 .treca {
   margin: 40px 40px 40px;
-  width: 210px;
-  height: 353px;
+  width: 212px;
+  height: 383px;
   background-color: #d5d5c4;
   border: hidden;
   padding: 10px;
@@ -52,8 +52,8 @@ body {
 
 .cetvrta {
   margin: 40px 40px 40px;
-  width: 210px;
-  height: 353px;
+  width: 212px;
+  height: 383px;
   background-color: #d5d5c4;
   border: hidden;
   padding: 10px;
