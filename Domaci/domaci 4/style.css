@@ -18,6 +18,12 @@
   font-family: "Lato", sans-serif;
 }
 
+.text {
+  padding: 15px;
+  background-color: #ffe4c4;
+  border-radius: 30px;
+}
+
 .card img {
   width: 500px;
   height: 250px;
