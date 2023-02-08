@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 50%;
+  height: 50vh;
+  background-color: #9756d4;
+  margin: 40px auto 0px;
+  position: relative;
+}
+
+.child1 {
+  background-color: #ed82ed;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.child2 {
+  background-color: #785a94;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  z-index: 5;
+}
+
+.child3 {
+  background-color: #8b328b;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+}
