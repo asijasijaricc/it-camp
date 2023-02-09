@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato&family=Montserrat&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f9f3f3;
+}
+
+.first {
+  padding: 300px;
+  display: inline-block;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: #0000ff;
+}
+
+.second {
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 70px;
+}
