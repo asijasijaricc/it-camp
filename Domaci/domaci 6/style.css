@@ -76,24 +76,25 @@ p {
 
 .child2 {
   background-color: #acadae;
-  margin: 700px 900px;
+  margin: 200px 1130px;
   padding: 20px;
   border-radius: 7px;
   width: 350px;
   height: 510px;
   font-size: xx-large;
   display: inline-block;
-  position: absolute;
+  position: relative;
   box-shadow: 10px 10px 5px #6f6e6e;
 }
 
 .dugme2 {
-  background-color: blue;
-  width: 200px;
-  height: 26px;
+  background-color: #643864;
   text-align: center;
+  color: #ffff;
   border-radius: 4px;
+  padding: 25px;
   border: none;
+  padding: 15px;
 }
 
 span {
