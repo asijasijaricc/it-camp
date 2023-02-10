@@ -14,10 +14,26 @@
 h1 {
   font-family: "Fjalla One", sans-serif;
   color: #0000ff;
+  font-size: 50px;
 }
 
 .second {
   background-color: #ffffff;
   display: inline-block;
+  align-items: center;
   padding: 70px;
+  box-shadow: 10px 10px 5px #6f6e6e;
+}
+
+.dugme1 {
+  border-radius: 5px;
+  width: 150px;
+  color: #f9f3f3;
+  background-color: #0000ff;
+  font-size: 19px;
+  border: none;
+}
+
+p {
+  font-size: 20px;
 }
