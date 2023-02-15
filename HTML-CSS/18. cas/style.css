@@ -43,6 +43,7 @@ header div {
 .icon {
   font-size: 30px;
   margin-left: 60px;
+  cursor: pointer;
 }
 
 header a,
@@ -68,21 +69,22 @@ header div {
   position: relative;
 }
 
-.main text {
+.main-text {
   float: left;
-  background-color: aliceblue;
-  height: 200px;
+  background-color: white;
+  height: 170px;
   width: 500px;
   margin-left: 70px;
   margin-top: 150px;
   font-size: 25px;
   padding: 15px;
-  box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .img {
   position: absolute;
   left: 630px;
+  bottom: 245px;
 }
 
 .cards-main {
@@ -98,4 +100,21 @@ header div {
   font-size: 14px;
   color: black;
   overflow: auto;
+}
+
+.naslov {
+  margin: 30px;
+  margin-left: 15%;
+}
+
+.img-card1 {
+  float: left;
+  width: 35%;
+  height: 200px;
+}
+
+.img-card2 {
+  float: left;
+  width: 39%;
+  height: 200px;
 }
