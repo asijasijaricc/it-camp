@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.parent {
+  margin: auto;
+  width: 60%;
+  height: 80vh;
+  background-color: #7e9fdc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* flex-wrap: nowrap; deafultna vrednost */
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+
+  gap: 15px; /* prostor izmedju kolona/child elemenata*/
+  /* margin-left: 15px; */
+
+  /* row-gap: 15px; prosotor izmedju redova, a s obzirom da display-flex ima samo jedan red 
+  necemo ga korisitit ovde  */
+  /* column-gap: 15px; Prosotr izmedju kolona. Isti efekat kao gap. */
+}
+
+.box {
+  flex-basis: 150px; /* flex-besis je dobra praksa za koriscenje umesto width. ISTI JE EFEKAT!!! */
+  height: 150px;
+}
+
+.first {
+  background-color: #5486e2;
+  /* flex-grow: 1; uzima jednu celinu sirine. treba ga definisati i na ostalim child elementima.*/
+  /* flex-shrink: 3; ptoperty dolazi od izrazaja kada suzavamo ekran. Pozeljno je imati definisanu sirinu 
+  childa kako bi svojstvo flex-shrinka doslo do izrazaja. */
+
+  /* order svojstvo nam sluzi za redjanje elemenata po stranici po nasoj zelji. MENJEMO HTML POREDATK ELEMETA. */
+  order: 2;
+}
+
+.second {
+  background-color: #1e448a;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  order: 3;
+}
+
+.third {
+  background-color: #185ddc;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  order: 1;
+}

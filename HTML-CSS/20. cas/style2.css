@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #aea4a4;
+}
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 150px; */
+}
+
+img {
+  width: 400px;
+  height: 350px;
+}
+
+.child2 {
+  margin-top: 130px;
+  width: 400px;
+  height: 350px;
+}
+
+button {
+  background-color: #aea4a4;
+  width: 90px;
+  height: 30px;
+  border-radius: 8px;
+}
