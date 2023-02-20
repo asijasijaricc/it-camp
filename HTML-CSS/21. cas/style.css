@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.parent {
+  margin: auto;
+  width: 60%;
+  height: 80vh;
+  background-color: #7e9fdc;
+  display: flex;
+  flex-direction: column;
+  /* Hotizantalno poravrnanje:=- */
+  /* align-items: center; */
+  align-items: flex-end;
+
+  /* Vertikalno poravnanje: */
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+}
+
+.first {
+  background-color: #5486e2;
+}
+
+.second {
+  background-color: #1e448a;
+}
+
+.third {
+  background-color: #185ddc;
+}

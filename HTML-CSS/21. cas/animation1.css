@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: auto;
+  background-color: #d87093;
+  width: 500px;
+  height: 500px;
+}
+
+.child {
+  width: 50%;
+  height: 50%;
+  background-color: #ffc0cb;
+  /* border-radius: 50%; */
+  transition: all 1s cubic-bezier(0.42, -0.94, 0.2, 1) 0.5s;
+  /* transition-property: transform; na koji se property odnosi */
+  /* transition-duration: 1s; trajanje transformacije */
+  /* transition-timing-function: ease-in-out; funkcija po kojoj se vrsi transformacija */
+  /* transition-delay: 2s; odlaganje transformacija*/
+  /* transision  */
+}
+
+.parent:hover .child {
+  transform: translateX(100%); /* pomeranje po X-osi*/
+  /* transform: translateY(100%); pomeranje po Y-osi*/
+  /* transform: translate(100%, 100%); pomeranje po X i Y-osi */
+  background-color: #d73550;
+}
+
+/* .child:hover { */
+/* transform: scale(1.2); jedna vrednost povecava(smanjuje) element na osnovu unete vrednosti 
+  proporcionalno po x i y osi. */
+/* transform: scale(
+    0.5,
+    1.5
+    );  Ako ima dve vrednosti, prva se odnosi na sirinu, dryga na visinu } */
