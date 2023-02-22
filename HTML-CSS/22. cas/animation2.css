@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: auto;
+  background-color: #d87093;
+  width: 500px;
+  height: 500px;
+}
+
+.child {
+  width: 50%;
+  height: 50%;
+  background-color: #ffc0cb;
+}
+
+.parent:hover .child {
+  /* background-color: #d73550; */
+  /* animation: top-to-bottom 1.3s ease-in 0.5s forwards 3 alternate; */
+  /* animation-play-state: paused; */
+  animation: top-to-bottom 2s ease-in 0.5s forwards infinite alternate;
+}
+
+@keyframes top-to-bottom {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(100%);
+    background-color: #f73253;
+  }
+  50% {
+    transform: translate(50%, 50%);
+    background-color: #f73253;
+  }
+  66% {
+    transform: translate(100%, 100%);
+    background-color: #b04456;
+  }
+  100% {
+    transform: translate(0%, 100%);
+    background-color: #b6253d;
+  }
+}
