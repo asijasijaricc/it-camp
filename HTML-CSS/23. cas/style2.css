@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ee82ee;
+}
+
+.parent {
+  background-color: #e89ee8;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 150px;
+}
+
+@media (min-width: 501px) and (max-width: 681px) {
+  .parent {
+    background-color: #bc85bc;
+    color: #e89ee8;
+  }
+}
+
+/* @media (min-width: 505px), (max-width: 700px) {
+    .parent {
+        background-color: #663066;
+        color: #e89ee8;
+    }
+    } */
+
+@media (max-width: 500px) {
+  .parent {
+    background-color: #5e215e;
+  }
+}
+
+/* moze i landscapave */
+
+/* @media (orientation: portrait) {
+  .parent {
+    background-color: #dd2bdd;
+  }
+} */
