@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: auto;
+  width: 800px;
+  /* height: 1000px; */
+  background-color: #ffc0cb;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-auto-rows: minmax(180px, auto);
+  grid-gap: 15px;
+}
+
+.first {
+  background-color: #d87093;
+  /* Spajanje kolone preko 2 css svojstva */
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  /* Spajanje kolone preko 1 css svojstva */
+  grid-column: 1/3;
+}
+
+.second {
+  background-color: #f75d90;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.third {
+  background-color: #c06483;
+}
+
+.fourth {
+  background-color: #ce4c77;
+}
+
+.fifth {
+  background-color: #a57078;
+  /* Spajanje kolona (ukljucujuci poslednju) moze se izvrsiti preko indeksa -1 */
+  grid-column: 1/-1;
+}
+
+.sixth {
+  background-color: #bb305e;
+  /* Spajanje redova i kolona se moze izvrsiti i preko span {number} sintakse na sledeci nacin */
+  grid-column: span 2;
+}
+
+.seventh {
+  background-color: #4d2230;
+}

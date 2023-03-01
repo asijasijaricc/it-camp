@@ -50,74 +50,8 @@ button {
   border: none;
 }
 
-.prvi {
-  width: 350px;
-  height: 300px;
-  background-color: #909491;
-  position: relative;
-  margin-left: 170px;
-  font-size: 17px;
-  display: flex;
-  justify-content: center;
-  justify-self: center;
-  align-items: center;
-}
-
-.drugi {
-  width: 350px;
-  height: 300px;
-  background-color: #909491;
-  position: relative;
-  margin-right: 270px;
-  margin-left: 170px;
-  top: 80px;
-  font-size: 17px;
-  display: flex;
-  justify-content: center;
-  justify-self: center;
-  align-items: center;
-}
-
-.treci {
-  width: 350px;
-  height: 300px;
-  background-color: #909491;
-  justify-content: center;
-  justify-self: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-  margin-left: 600px;
-  top: -530px;
-  font-size: 17px;
-}
-
-.cetvrti {
-  width: 350px;
-  height: 300px;
-  background-color: #909491;
-  justify-content: center;
-  justify-self: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-  font-size: 17px;
-  top: -450px;
-  margin-bottom: 900px;
-  margin-left: 600px;
-}
-
-img {
-  width: 350px;
-  height: 450px;
-  position: relative;
-  top: -1950px;
-  margin-left: 1000px;
-  border-radius: 20px;
-}
-
-img {
-  float: right;
+.main {
+  margin: auto;
 }
 
 .main2 {
@@ -129,13 +63,12 @@ img {
   background-color: #c9cdd1;
   width: 350px;
   height: 450px;
-  padding: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  padding: 50px;
+  margin-left: 150px;
+  display: inline-block;
   text-align: center;
-  text-decoration: none;
 }
+
 .spangreen {
   color: green;
 }
