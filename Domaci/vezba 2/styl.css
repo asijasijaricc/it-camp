@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #023b6d;
+  font-family: "Noto Serif", serif;
+}
+
+header {
+  background-color: #023b6d;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  float: left;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  margin-left: 15px;
+}
+
+span {
+  color: #7d7ded;
+}
+
+.dugme1 {
+  background-color: #023b6d;
+  border-radius: 14px;
+  font-size: large;
+  border-color: aqua;
+  color: aliceblue;
+  margin-left: 1170px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.parent {
+  display: flex;
+  margin: 100px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.child h1 {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.child h4 {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.dugme2 {
+  background-color: #7d7ded;
+  border: none;
+  font-size: x-large;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.dugme3 {
+  background-color: #023b6d;
+  border: none;
+  color: white;
+  font-size: x-large;
+}
