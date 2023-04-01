@@ -40,7 +40,7 @@ if (y === 0) {
 // ako je broj godina izmedju 18(ukljucuje) i 40(ne ukljucuje): Vi ste punoletni
 // ako je broj godina veci ili jednak 40: Vi ste zrela osoba.
 
-const brojGodina = 40;
+const brojGodina = 17;
 
 if (brojGodina < 12) {
   console.log("Vi ste decijeg doba");
