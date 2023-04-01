@@ -55,4 +55,4 @@ console.log(w);
 const niz = [12, 13, 15, 16];
 // niz = ["bilo", "sta"];
 console.log(niz);
-// Postoje metode koje nam dozvoljavaju izmenu naseg niza bez obzira sto se radi o promenljivoj definisanoj preko const keyword.
+// Postoje metode koje nam dozvoljavaju izmenu naseg niza bez obzira sto se radi o promenljivoj definisanoj preko const keyword.

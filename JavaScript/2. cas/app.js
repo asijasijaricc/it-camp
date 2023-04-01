@@ -76,4 +76,4 @@ console.log(c);
 d = 5;
 console.log(d);
 
-// Varijable (promenljive) u JavaScriptu predstavljaju kontejnere za skladistenje vrednosti.
+// Varijable (promenljive) u JavaScriptu predstavljaju kontejnere za skladistenje vrednosti.

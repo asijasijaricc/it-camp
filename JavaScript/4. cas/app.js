@@ -49,5 +49,5 @@ if (brojGodina < 12) {
 } else if (brojGodina < 40) {
   console.log("Vi ste punoletni");
 } else {
-  console.log("Vi ste zrela osoba");
+  console.log("Vi ste zrela osoba");
 }
