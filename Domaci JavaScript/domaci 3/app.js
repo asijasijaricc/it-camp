@@ -17,14 +17,14 @@ for (let i = 1; i < 20; i++) {
 //2.
 
 for (let j = 50; j <= 100; j++) {
-  if (j % 5) {
+  if (j % 5 === 0) {
     console.log(j);
   }
 }
 
 //3.
 
-for (let i = 10; i < 20; i++) {
+for (let i = 10; i <= 20; i++) {
   if (i % 2 !== 0) {
     console.log(i);
   }
