@@ -16,9 +16,9 @@ for (let i = 1; i < 20; i++) {
 
 //2.
 
-for (let i = 50; i < 50; i++) {
-  if (i % 5) {
-    console.log(i);
+for (let j = 50; j <= 100; j++) {
+  if (j % 5) {
+    console.log(j);
   }
 }
 
