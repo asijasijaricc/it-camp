@@ -8,10 +8,16 @@
 
 //1.
 
-for (let i = 1; i < 20; i++) {
+for (let i = 1; i <= 20; i++) {
   if (i % 2 !== 0) {
     console.log(i);
   }
+}
+
+// 1. drug nacin
+
+for (let i; i < 20; i += 2) {
+  console.log(i);
 }
 
 //2.
@@ -29,3 +35,15 @@ for (let i = 10; i <= 20; i++) {
     console.log(i);
   }
 }
+
+// 3. drugi nacin
+
+let zbir = 0;
+
+for (let i = 11; i < 20; i += 2) {
+  zbir += i;
+}
+console.log(zbir);
+
+// let a = 5 ona ce se kasnije promeniti
+// const a = 5 se nece menjati bice konstantno 5
