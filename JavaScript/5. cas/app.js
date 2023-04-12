@@ -8,7 +8,7 @@ console.log(ime);
 // console.log(brojGodina);
 // console.log(typeof brojGodina);
 
-// Posto je vrednost dobijena preko prompt metode uvek string, otudapotreba da pretvorimo taj string u number tip podataka:
+// Posto je vrednost dobijena preko prompt metode uvek string, otuda potreba da pretvorimo taj string u number tip podataka:
 
 // Pomenucemo 2 nacina za prevodjenje stringa u broj:
 
