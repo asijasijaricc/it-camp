@@ -8,32 +8,36 @@
 
 // 1.
 
-// const recenica1 = prompt("Unesite neku recenicu:");
-// let recenica2 = "";
+const recenica1 = prompt("Unesite neku recenicu:");
+let recenica2 = "";
 
-// for (let i = 0; i < recenica1.length; i++) {
-//   if (recenica1[i] === "a") {
-//     console.log("t");
-//   } else if (recenica1[i] === "")
-// }
-
+for (let i = 0; i < recenica1.length; i++) {
+  if (recenica1[i] === "a" && recenica1[i + 1] === "n") {
+    recenica2 += "d";
+  } else if (recenica1[i] === "a") {
+    recenica2 += "t";
+  } else {
+    recenica2 += recenica1[i];
+  }
+}
+console.log(recenica2);
 // 2.
 
-// const recenica3 = prompt("Unesite neku recenicu:");
-// let recenica4 = " ";
+const recenica3 = prompt("Unesite neku recenicu:");
+let recenica4 = " ";
 
-// for (let i = 0; i < recenica3.length; i++) {
-//   if (
-//     recenica3[i] === "a" ||
-//     recenica3[i] === "e" ||
-//     recenica3[i] === "i" ||
-//     recenica3[i] === "o" ||
-//     recenica3[i] === "u"
-//   ) {
-//     recenica3[i] += recenica4.toUpperCase;
-//   } else {
-//     recenica3[i] += recenica4;
-//   }
-// }
+for (let i = 0; i < recenica3.length; i++) {
+  if (
+    recenica3[i] === "a" ||
+    recenica3[i] === "e" ||
+    recenica3[i] === "i" ||
+    recenica3[i] === "o" ||
+    recenica3[i] === "u"
+  ) {
+    recenica4 += recenica3[i].toUpperCase();
+  } else {
+    recenica4 += recenica3[i];
+  }
+}
 
-// console.log(recenica4);
+console.log(recenica4);
