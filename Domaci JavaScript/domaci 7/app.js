@@ -21,6 +21,7 @@ for (let i = 0; i < recenica1.length; i++) {
   }
 }
 console.log(recenica2);
+
 // 2.
 
 const recenica3 = prompt("Unesite neku recenicu:");
