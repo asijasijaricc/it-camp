@@ -11,7 +11,8 @@
 
 function zbirKvadrata(dr1, dr2) {
   if (dr2 === undefined) {
-    return dr2 === 0;
+    dr2 = 0;
+    return dr1 * dr1 + dr2 * dr2;
   } else {
     return dr1 * dr1 + dr2 * dr2;
   }
@@ -33,8 +34,8 @@ function povrsina(vr1, vr2) {
   if (vr1 === vr2) {
     return vr1 * 2;
   } else {
-    return vr1 * vr2;
+    return "Povrsina pravougainika je " + vr1 * vr2;
   }
 }
 
-console.log(povrsina(2, 2));
+console.log(povrsina(2, 3));
