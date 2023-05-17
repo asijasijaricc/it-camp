@@ -9,8 +9,16 @@
 // Funkcija treba da vrati true ako je string palindrom, inače false.
 // Na primer, za ulazni string "radar" funkcija treba da vrati true, dok za ulazni string "hello" funkcija treba da vrati false.
 
+// 1.
+
 function spajanjeStringa(string1, string2) {
-  string1 += string2;
+  return (string1 += string2);
 }
 
-console.log(spajanjeStringa("hello", "world"));
+const rezultat = spajanjeStringa("Hello", "World");
+console.log(rezultat);
+
+// 2.
+// function palindrom(pal) {
+//   if()
+// }
