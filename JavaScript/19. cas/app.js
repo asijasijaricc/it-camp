@@ -79,3 +79,7 @@ function originalniIndex3(string, index1, index2) {
 }
 
 console.log(originalniIndex3("Hello, World", 7, 11));
+
+// domaci 1. split
+// domaci 2. palindrom
+// domaci 3. for
