@@ -47,3 +47,5 @@ const zadatak = (recenica) => {
 console.log(zadatak("ko osvaja ligu sampiona?"));
 console.log(zadatak("Ko osvaja ligu sampiona?"));
 console.log(zadatak("ko osvaja ligu sampiona? ko osvaja? ko osvaja?"));
+
+// ako je razlicit -1 skola
