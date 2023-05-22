@@ -38,3 +38,16 @@ function obrnutiRedosled(string) {
 var string = "hello";
 var obrnutiString = obrnutiRedosled(string);
 console.log(obrnutiString);
+
+// 3.
+
+// function jelCifra(string) {
+//   var brojac = 0;
+//   for (var i = 0; i < string.length; i++) {
+//     var znak = string[i];
+//     if (znak === string) {
+//       brojac++;
+//     }
+//   }
+//   return brojac;
+// }
