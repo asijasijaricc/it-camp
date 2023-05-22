@@ -13,7 +13,7 @@ console.log(recenica.indexOf("nas"));
 console.log(recenica.indexOf("danas"));
 
 // lastIndexOf() metoda nam vraca poziciju poslednjeg pojavljivanja karaktera (niza karaktera) koje smo poslali kao argument.
-// Ako se argument ne nadje unutr stringa rezultat ce biti -1.
+// Ako se argument ne nadje unutar stringa rezultat ce biti -1.
 
 console.log(recenica.lastIndexOf("dan"));
 console.log(recenica.lastIndexOf("lep"));

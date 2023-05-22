@@ -11,6 +11,8 @@
 
 // 1.
 
+// 1. nacin
+
 function prebrojavanjeReci(string) {
   string = string.trim();
   if (string === "") {
@@ -24,7 +26,15 @@ var string = "Ovo je primer.";
 var brojReci = prebrojavanjeReci(string);
 console.log(brojReci);
 
+// 2. nacin
+
+const first = (recenica) => recenica.split(" ").length;
+console.log(first("Koliko ima reci?"));
+console.log(first("Koliko"));
+
 // 2.
+
+// 1. nacin
 
 function obrnutiRedosled(string) {
   var obrnutiString = "";
@@ -39,15 +49,28 @@ var string = "hello";
 var obrnutiString = obrnutiRedosled(string);
 console.log(obrnutiString);
 
+// 2. nacin
+
+const second = (string) => {
+  let noviString = "";
+
+  for (let i = string.length - 1; i >= 0; i--) {
+    noviString += string[i];
+  }
+  return noviString;
+};
+console.log(second("hello"));
+
 // 3.
 
-// function jelCifra(string) {
-//   var brojac = 0;
-//   for (var i = 0; i < string.length; i++) {
-//     var znak = string[i];
-//     if (znak === string) {
-//       brojac++;
-//     }
-//   }
-//   return brojac;
-// }
+const third = (string) => {
+  let brojac = 0;
+  for (let i = 0; i <= string.length; i++) {
+    if (!isNaN(string[i]) && string[i] !== " ") {
+      brojac++;
+    }
+  }
+  return brojac;
+};
+
+console.log(third("Koliko ima cifara broj 256?"));
