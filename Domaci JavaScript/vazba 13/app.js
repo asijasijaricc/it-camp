@@ -21,7 +21,7 @@ function prvaFunc(recenica) {
   }
 }
 
-console.log(prvaFunc("kuca kuca kuca"));
+// console.log(prvaFunc("kuca kuca kuca"));
 
 // 2.
 
