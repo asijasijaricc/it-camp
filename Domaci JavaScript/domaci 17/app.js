@@ -13,7 +13,7 @@
 
 // 123
 
-// 1.
+// 1. prvi nacin
 
 function pravougaonik() {
   let a = +prompt("Unesite duzinu stranice a:");
@@ -28,8 +28,38 @@ function pravougaonik() {
   }
 }
 
-console.log(pravougaonik());
+// console.log(pravougaonik());
+
+// 1. drugi nacin
+
+const first = () => {
+  const a = +prompt("Unesite prvu potencijalnu stranicu pravougaonika: ");
+  const b = +prompt("Unesite drugu potencijalnu stranicu pravougaonika: ");
+  const c = +prompt("Unesite trecu potencijalnu stranicu pravougaonika: ");
+  const d = +prompt("Unesite cetvrtu potencijalnu stranicu pravougaonika: ");
+
+  if (
+    ((a === b) === c) === d ||
+    (a === b && c === d) ||
+    (a === c && b === d) ||
+    (a === d && b === c)
+  ) {
+    return "Moguce je formirati pravougaonik";
+  } else {
+    return "Nije moguce formirati pravougaonik";
+  }
+};
+
+// console.log(first());
 
 // 2.
 
-function pretvoriSec(sekunde) {}
+const second = () => {
+  const brojSekundi = +prompt("Unesite broj sekundi:");
+  const sati = Math.floor(brojSekundi / 3600);
+  const minuti = Math.floor((brojSekundi % 3600) / 60);
+  const sekundi = brojSekundi % 60;
+  return `${sati} h ${minuti} m ${sekundi} s`;
+};
+
+console.log(second());
