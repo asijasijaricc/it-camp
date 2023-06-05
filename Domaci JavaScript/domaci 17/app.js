@@ -29,3 +29,7 @@ function pravougaonik() {
 }
 
 console.log(pravougaonik());
+
+// 2.
+
+function pretvoriSec(sekunde) {}
