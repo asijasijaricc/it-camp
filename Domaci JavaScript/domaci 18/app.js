@@ -47,10 +47,10 @@ console.log(inci(25));
 
 // 3.
 
-// function trocifreni(broj) {
-//   if (broj > 100 || broj < 999) {
-//     return broj % 10;
-//   }
-// }
+function trocifreni(broj) {
+  if (broj > 100 || broj < 999) {
+    return broj / 10;
+  }
+}
 
-// console.log(trocifreni(99));
+console.log(trocifreni(123));
