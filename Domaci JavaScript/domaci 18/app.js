@@ -24,6 +24,8 @@ function inci(inch) {
 
 console.log(inci(10));
 
+console.log(inci(25));
+
 // 2.
 
 // function palindrom(broj) {
