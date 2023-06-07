@@ -44,3 +44,13 @@ console.log(inci(25));
 // // console.log(palindrom("1001"));
 
 // // console.log(palindrom("4234"));
+
+// 3.
+
+// function trocifreni(broj) {
+//   if (broj > 100 || broj < 999) {
+//     return broj % 10;
+//   }
+// }
+
+// console.log(trocifreni(99));
