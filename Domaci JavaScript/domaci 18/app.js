@@ -21,11 +21,8 @@ console.log(mtokm(2500));
 function inci(inch) {
   return inch * 2.54;
 }
-// ds
 
 console.log(inci(10));
-
-console.log(inci(25));
 
 // 2.
 
