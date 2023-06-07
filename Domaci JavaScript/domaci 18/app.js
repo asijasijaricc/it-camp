@@ -46,8 +46,10 @@ console.log(inci(10));
 // 3.
 
 function trocifreni(broj) {
-  if (broj > 100 || broj < 999) {
+  if (broj > 100 && broj < 999) {
     return broj / 10;
+  } else {
+    return "Unesite trocifren broj";
   }
 }
 
