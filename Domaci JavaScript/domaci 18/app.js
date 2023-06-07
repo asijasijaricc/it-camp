@@ -14,7 +14,7 @@ function mtokm(m) {
   return m / 1000;
 }
 
-console.log(mtokm(2500));
+// console.log(mtokm(2500));
 
 // b)
 
@@ -22,7 +22,7 @@ function inci(inch) {
   return inch * 2.54;
 }
 
-console.log(inci(10));
+// console.log(inci(10));
 
 // 2.
 
@@ -32,25 +32,41 @@ console.log(inci(10));
 //   for (let i = broj.length - 1; i >= 0; i--) {
 //     palibroj += broj[i];
 //   }
-//   if (broj === palibroj) {
+//   if (broj == palibroj) {
 //     return "Broj je palindrom";
 //   } else {
 //     return "Broj nije palindrom";
 //   }
 // }
 
-// // console.log(palindrom("1001"));
+// console.log(palindrom(10201));
 
-// // console.log(palindrom("4234"));
+// console.log(palindrom(4234));
 
-// 3.
+// 3. moj nacin /
 
-function trocifreni(broj) {
-  if (broj > 100 && broj < 999) {
-    return broj / 10;
+// function trocifreni(broj) {
+//   if (broj > 100 && broj < 999) {
+//     return broj / 10;
+//   } else {
+//     return "Unesite trocifren broj";
+//   }
+// }
+
+// console.log(trocifreni(123));
+
+// 2. nacin
+
+function vratiBroj(broj) {
+  if (!isNaN(broj) && broj >= 100 && broj <= 999) {
+    const stotina = Math.floor(broj / 100);
+    const jedinica = broj % 10;
+    const noviBroj = Number(`${stotina}${jedinica}`);
+    return noviBroj;
   } else {
-    return "Unesite trocifren broj";
+    return "Argument nije trazeni broj iz opsega";
   }
 }
 
-console.log(trocifreni(123));
+console.log(vratiBroj(123));
+console.log(vratiBroj(976));
