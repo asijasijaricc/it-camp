@@ -15,7 +15,6 @@ function range(num1, num2) {
     ("Numbers arent in the ranges.");
   }
 }
-
 console.log(range(45, 70));
 
 // 2.
