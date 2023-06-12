@@ -12,7 +12,7 @@ function range(num1, num2) {
   } else if ((num1 >= 70 && num1 <= 100) || (num2 >= 70 && num2 <= 100)) {
     return `Number is in the range between 70 and 100`;
   } else {
-    ("Numbers arent in the ranges.");
+    return "Numbers arent in the ranges.";
   }
 }
 console.log(range(45, 70));
