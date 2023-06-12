@@ -49,3 +49,11 @@ function obimKruga(r) {
 }
 
 console.log(obimKruga(2));
+
+// 2. Izracunati rastojanje izmedju dev tacke u prostoru ako su zadata koordinate krajnjih tacaka.
+
+function rastojanje(x1, y1, x2, y2) {
+  return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+}
+
+console.log(rastojanje(2, -3, 5, 4));
