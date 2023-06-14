@@ -17,9 +17,7 @@ console.log(povrsina(3));
 // 2.
 
 function stepen(radijan) {
-  return (radijan * 180) / 2;
+  return radijan * (180 / Math.PI);
 }
 
-let radijan = Math.PI / 2;
-
-console.log(stepen(3));
+console.log(stepen(5));
