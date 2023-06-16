@@ -98,3 +98,57 @@ drugaRec += " je bilo lepo vreme.";
 
 console.log(drugaRec);
 console.log(rec);
+
+// Primer referentnog tipa podataka
+
+const niz = [1, 2, 3];
+console.log(niz);
+
+const drugiNiz = niz;
+console.log(drugiNiz);
+
+drugiNiz.pop();
+console.log(drugiNiz);
+console.log(niz);
+
+// 1. Write a JavaScript function to get number of days in a month.
+
+const getDaysInMonth = (month, year) => {
+  const date = new Date(year, month, 0, 22, 22, 22).getDate();
+  return date;
+};
+
+// saljemo godinu, mesec,
+console.log(new Date(2023, 0, 0, 22, 22, 22));
+
+console.log(getDaysInMonth(1, 2012));
+console.log(getDaysInMonth(2, 2012));
+console.log(getDaysInMonth(9, 2012));
+console.log(getDaysInMonth(12, 2012));
+
+// 2. Write a JavaScript function to get the month name from a particular date
+
+("2023-05-22");
+
+const getMONTH = (string) => {
+  const niz = [
+    "Januar",
+    "Februar",
+    "Mart",
+    "April",
+    "Maj",
+    "Jun",
+    "Jul",
+    "Avgust",
+    "Septembar",
+    "Oktobar",
+    "Novembar",
+    "Decembar",
+  ];
+  const date = new Date(string);
+  const month = date.getMonth();
+
+  return niz[month];
+};
+
+console.log(getMONTH("2023-01-22"));
