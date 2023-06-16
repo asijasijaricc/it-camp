@@ -1,5 +1,7 @@
-// Napraviti funkciju koja racuna razliku u danima izmedju sledeca dva datuma:
+// 1. Napraviti funkciju koja racuna razliku u danima izmedju sledeca dva datuma:
 // "1999-05-24" i "2004-09-15"
+
+// 1.
 
 function dani(datum1, datum2) {
   //   let datum1 = new Date(1999, 5, 24);
