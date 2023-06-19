@@ -1,15 +1,15 @@
 // Write a JavaScript program to calculate age.
 
 function godine(rodjendan) {
-  let datum = new Date();
+  let danas = new Date();
   let rodjendan2 = new Date(rodjendan);
 
-  let godina = datum.getFullYear() - rodjendan2.getFullYear();
+  let godina = danas.getFullYear() - rodjendan2.getFullYear();
 
   if (
-    datum.getMonth() < rodjendan2.getMonth() ||
-    (datum.getMonth() === rodjendan2.getMonth() &&
-      datum.getDate() < rodjendan2.getDate())
+    danas.getMonth() < rodjendan2.getMonth() ||
+    (danas.getMonth() === rodjendan2.getMonth() &&
+      danas.getDate() < rodjendan2.getDate())
   ) {
     godina--;
   }
