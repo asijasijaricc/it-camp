@@ -1,5 +1,7 @@
 // Write a JavaScript program to calculate age.
 
+// 1. nacin
+
 function godine(rodjendan) {
   let danas = new Date();
   let rodjendan2 = new Date(rodjendan);
@@ -18,3 +20,20 @@ function godine(rodjendan) {
 }
 
 console.log(godine("2003-12-27"));
+
+// 2. nacin
+
+function countMyAge(birthDateString) {
+  const birthDate = new Date(birthDateString);
+  const currentDate = new Date();
+
+  const birthMilli = Date.parse(birthDate);
+  const currentTimeMilli = Date.parse(currentDate);
+
+  const sub = currentTimeMilli - birthMilli;
+  const year = new Date(sub).getFullYear() - 1970;
+
+  return year;
+}
+
+console.log(countMyAge("2003-12-27"));
