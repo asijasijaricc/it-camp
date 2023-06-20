@@ -36,3 +36,4 @@ function prvo(niz) {
 }
 
 console.log(prvo([1, 2, 3, 4]));
+console.log(prvo(["Audi", "Mercedes", "Volvo"]));
