@@ -18,3 +18,11 @@ console.log(jelNiz([1, 2, 3]));
 console.log(jelNiz("string"));
 
 // 2.
+
+// 3.
+
+function prvo(niz) {
+  return niz[0];
+}
+
+console.log(prvo([1, 2, 3, 4]));
