@@ -19,6 +19,16 @@ console.log(jelNiz("string"));
 
 // 2.
 
+function klon(niz) {
+  let kloniran = [];
+  for (var i = 0; i < niz.length; i++) {
+    kloniran.push(niz[i]);
+  }
+  return kloniran;
+}
+
+console.log(klon([1, 2, 3, 4]));
+
 // 3.
 
 function prvo(niz) {
