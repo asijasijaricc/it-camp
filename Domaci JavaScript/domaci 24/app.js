@@ -24,6 +24,7 @@ function klon(niz) {
 }
 
 console.log(klon([1, 2, 3, 4]));
+console.log(klon(["Audi", "Mercedes", "Porsche"]));
 
 // 3.
 
@@ -32,4 +33,4 @@ function prvo(niz) {
 }
 
 console.log(prvo([1, 2, 3, 4]));
-console.log(prvo(["Audi", "Mercedes", "Volvo"]));
+console.log(prvo(["Audi", "Mercedes", "Porsche"]));
