@@ -70,4 +70,11 @@ const firstN = (arr, n = 1) => {
   // } else {
   //   return
   // }
+  for (let i = 0; i < n; i++) {
+    console.log(arr[i]);
+  }
+  return "Kraj";
 };
+
+console.log(firstN([5, 4, 3, 2, 1]));
+console.log(firstN([5, 4, 3, 2, 1], 3));
