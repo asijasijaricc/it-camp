@@ -29,7 +29,7 @@ function tip(niz) {
       brojevi++;
     } else if (typeof niz[i] === "boolean") {
       boolean++;
-    } else if (typeof niz[i] === Array) {
+    } else if (Array.isArray(niz[i])) {
       nizici++;
     }
     if (Array.isArray(niz)) {
