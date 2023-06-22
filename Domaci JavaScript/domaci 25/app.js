@@ -39,8 +39,8 @@ function tip(niz) {
   return `Broj string elemenata je ${stringovi}.
   Broj number elemenata je ${brojevi}.
   Broj boolean elemenata je ${boolean}.
-  Broj array elemenata je ${nizici}
-  Broj elemenata unutar niza je ${nizovi}`;
+  Broj array elemenata je ${nizici}.
+  Broj elemenata unutar niza je ${nizovi}.`;
 }
 
 console.log(
