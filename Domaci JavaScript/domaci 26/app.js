@@ -51,3 +51,18 @@ let celaGrupa = [
   "Anastasija",
   "Ajsa",
 ];
+
+celaGrupa.splice(5, 3);
+
+// console.log(celaGrupa);
+
+celaGrupa.splice(0, 1);
+
+console.log(celaGrupa);
+
+let devojke = celaGrupa.splice(3, 5);
+
+let muskarci = celaGrupa.splice(0, 3);
+
+console.log(devojke);
+console.log(muskarci);
