@@ -19,6 +19,7 @@ function najvBroj(niz) {
 }
 
 console.log(najvBroj([7, 4, 5, 6, 3]));
+console.log(najvBroj([3, 4, 5, 6, 7]));
 
 // 2.
 
@@ -33,6 +34,7 @@ function najmBroj(niz) {
   return najmanji;
 }
 
+console.log(najmBroj([3, 4, 5, 6, 7]));
 console.log(najmBroj([7, 4, 5, 6, 3]));
 
 // 3.
