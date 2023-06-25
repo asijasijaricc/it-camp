@@ -81,6 +81,3 @@ brojevi.sort(function (a, b) {
   return 0.5 - Math.random();
 });
 console.log(brojevi);
-
-// 1. Napravi funkciju koja vraca najveci element
-// 2. Napravi funkciju koja vraca najmani element
