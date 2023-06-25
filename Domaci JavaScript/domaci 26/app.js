@@ -66,3 +66,18 @@ let muskarci = celaGrupa.splice(0, 3);
 
 console.log(devojke);
 console.log(muskarci);
+
+// 4.
+
+function neparni(niz) {
+  let rezultat = [];
+
+  for (let i = 0; i < niz.length; i++) {
+    if (niz[i] % 2 !== 0) {
+      rezultat.push(niz[i]);
+    }
+  }
+  return rezultat;
+}
+
+console.log(neparni([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]));
