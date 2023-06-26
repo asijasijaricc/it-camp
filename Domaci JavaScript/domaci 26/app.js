@@ -37,7 +37,7 @@ function najmBroj(niz) {
 console.log(najmBroj([3, 4, 5, 6, 7]));
 console.log(najmBroj([7, 4, 5, 6, 3]));
 
-// 3.
+// 3. prvi nacin
 
 let celaGrupa = [
   "Tarik",
@@ -68,6 +68,54 @@ let muskarci = celaGrupa.splice(0, 3);
 
 console.log(devojke);
 console.log(muskarci);
+
+// 3. drugi nacin
+
+let grupa = [
+  "Tarik",
+  "Selver",
+  "Emir",
+  "Nedim",
+  "Merjem",
+  "Melida",
+  "Marija",
+  "Dzevdet",
+  "Dzana",
+  "Asija",
+  "Anastasija",
+  "Ajsa",
+];
+
+const novaGrupa = [];
+
+for (let person of grupa) {
+  if (
+    person === "Tarik" ||
+    person === "Melida" ||
+    person === "Marija" ||
+    person === "Dzevdet"
+  ) {
+    continue;
+  } else {
+    novaGrupa.push(person);
+  }
+}
+
+console.log(novaGrupa);
+
+const muskarcii = [];
+const devojkee = [];
+
+for (let person of novaGrupa) {
+  if (person[person.length - 1] === "a" || person === "Merjem") {
+    devojkee.push(person);
+  } else {
+    muskarcii.push(person);
+  }
+}
+
+console.log(muskarcii);
+console.log(devojkee);
 
 // 4.
 
