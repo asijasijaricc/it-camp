@@ -58,3 +58,27 @@ function pozitivni(niz) {
 console.log(pozitivni([2, 3, -5, 4, -7, -5]));
 
 // 5.
+
+function sortiranje(niz) {
+  return niz.sort(function (a, b) {
+    return b - a;
+  });
+}
+
+console.log(sortiranje([2, 5, 6, 9, 11]));
+
+function sortiranjee(niz) {
+  return niz.sort(function (a, b) {
+    return a - b;
+  });
+}
+
+console.log(sortiranjee([2, 5, 6, 9, 11]));
+
+// 6.
+
+function spoj(niz) {
+  return niz.join("*");
+}
+
+console.log(spoj(["Audi", "Mercedes", "Porche"]));
