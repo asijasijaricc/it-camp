@@ -12,6 +12,19 @@
 
 // 6. Write a simple JavaScript program to join all elements of the following array into a string where is * between elements
 
+// 1.
+
+function parnaMesta(niz) {
+  let rezultat = [];
+
+  for (let i = 1; i < niz.length; i += 2) {
+    rezultat.push(niz[i]);
+  }
+  return rezultat;
+}
+
+console.log(parnaMesta([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]));
+
 // 2.
 
 function parni(niz) {
