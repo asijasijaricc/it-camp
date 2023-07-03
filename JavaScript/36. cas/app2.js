@@ -18,16 +18,6 @@ brojevi.forEach((element, index, array) => {
 
 // 2. Napraviti novi niz koji ce imati sve elemente originalnog niza.
 
-const brojevi2 = [2, 4, 6, 8, 10, 12];
-
-function noviN(niz) {
-  return niz.slice(0);
-}
-
-console.log(noviN(brojevi2));
-
-// drugi nacin
-
 const brrojevi3 = [];
 brojevi.forEach((element) => {
   brrojevi3.push(element);
