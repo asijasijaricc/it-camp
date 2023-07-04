@@ -26,3 +26,21 @@ const arr2 = arr.map((num) => num ** 3);
 console.log(arr2);
 
 // 3.
+
+const arr3 = arr.map((num) => +Math.sqrt(num).toFixed(2));
+
+console.log(arr3);
+
+// 4.
+
+const brojevi = [-5, 4, 3, 10, 14, -5];
+
+const brojevi2 = brojevi.map((num) => {
+  if (num > 0) {
+    return num ** 2;
+  } else {
+    return num * -1;
+  }
+});
+
+console.log(brojevi2);
