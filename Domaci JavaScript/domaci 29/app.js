@@ -45,6 +45,33 @@ console.log(arr2);
 
 // 3.
 
-const godine = [3, 10, 16, 5, 1, 6];
+function vrednost() {
+  const godine2 = godine.map((godina) => {
+    if (godina > 2 && godine < 8) {
+      return (godina * 4) / 2;
+    } else if (godina > 2) {
+      return godina * 7;
+    } else {
+      return godina;
+    }
+  });
+  const godine3 = godine2.filter((godina) => godina < 10);
+  return godine3;
+}
 
-function vrednost(arr) {}
+const godine = [1, 2, 3, 5, 7, 9, 11];
+const kraj = vrednost(godine);
+
+console.log(vrednost(kraj));
+
+// 4.
+
+function mtokm(metri) {
+  const kilometri = metri.map((metar) => metar / 1000);
+  const totalDistanceInKilometers = kilometri.reduce(
+    (prev, curr) => prev + curr
+  );
+  return totalDistanceInKilometers;
+}
+
+console.log(mtokm([5000, 6600, 10, 3, 300]));
