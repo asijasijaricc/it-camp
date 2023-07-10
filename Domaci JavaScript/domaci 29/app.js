@@ -13,7 +13,8 @@
 // In the end, add the kilometres up in a new variable called "totalDistanceInKilometers" and
 // return this variable.
 
-// 5. There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays. Go to the editor
+// 5. There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays.
+// Go to the editor
 // Sample array :
 // array1 = [1, 0, 2, 3, 4];
 // array2 = [3, 5, 6, 7, 8, 13];
