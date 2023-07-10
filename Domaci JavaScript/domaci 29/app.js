@@ -48,7 +48,7 @@ console.log(arr2);
 
 function vrednost() {
   const godine2 = godine.map((godina) => {
-    if (godina > 2 && godine < 8) {
+    if (godina > 2 && godina < 8) {
       return (godina * 4) / 2;
     } else if (godina > 2) {
       return godina * 7;
@@ -79,16 +79,16 @@ console.log(mtokm([5000, 6600, 10, 3, 300]));
 
 // 5.
 
-array1 = [1, 0, 2, 3, 4];
-array2 = [3, 5, 6, 7, 8, 13];
+// array1 = [1, 0, 2, 3, 4];
+// array2 = [3, 5, 6, 7, 8, 13];
 
-const rezultat = [];
+// const rezultat = [];
 
-const duzina = Math.max(array1.length && array2.length);
+// const duzina = Math.max(array1.length, array2.length);
 
-for (let i = 0; i < duzina; i++) {
-  const suma = array1[i] || 0 + array2[i] || 0;
-  rezultat.push(suma);
-}
+// for (let i = 0; i < duzina; i++) {
+//   const suma = array1[i] || 0 + array2[i] || 0;
+//   rezultat.push(suma);
+// }
 
-console.log(rezultat);
+// console.log(rezultat);
