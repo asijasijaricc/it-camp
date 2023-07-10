@@ -46,24 +46,38 @@ console.log(arr2);
 
 // 3.
 
-function vrednost() {
-  const godine2 = godine.map((godina) => {
-    if (godina > 2 && godina < 8) {
-      return (godina * 4) / 2;
-    } else if (godina > 2) {
-      return godina * 7;
+// function vrednost() {
+//   const godine2 = godine.map((godina) => {
+//     if (godina > 2 && godina < 8) {
+//       return (godina * 4) / 2;
+//     } else if (godina > 2) {
+//       return godina * 7;
+//     } else {
+//       return godina;
+//     }
+//   });
+//   const godine3 = godine2.filter((godina) => godina < 10);
+//   return godine3;
+// }
+
+// const godine = [1, 2, 3, 5, 7, 9, 11];
+// const kraj = vrednost(godine);
+
+// console.log(vrednost(kraj));
+
+const third = (arr) => {
+  const arr2 = arr.filter((value) => typeof value === "number" && value > 2);
+  const arr3 = arr2.map((value) => {
+    if (value < 8) {
+      return value * 2;
     } else {
-      return godina;
+      return value * 7;
     }
   });
-  const godine3 = godine2.filter((godina) => godina < 10);
-  return godine3;
-}
+  return arr3.filter((value) => value < 10);
+};
 
-const godine = [1, 2, 3, 5, 7, 9, 11];
-const kraj = vrednost(godine);
-
-console.log(vrednost(kraj));
+console.log(third([1, 2, 3, 5, 7, 9, 10]));
 
 // 4.
 
@@ -92,3 +106,19 @@ console.log(mtokm([5000, 6600, 10, 3, 300]));
 // }
 
 // console.log(rezultat);
+
+array1 = [1, 0, 2, 3, 4];
+array2 = [3, 5, 6, 7, 8, 13];
+
+const fifth = (arr1, arr2) => {
+  const longerArr = arr1.length > arr2.length ? arr1 : arr2;
+  const shorterArr = arr2.length >= arr1.length ? arr1 : arr2;
+
+  const arr3 = longerArr.map(
+    (value, index) => value + (shorterArr[index] || 0)
+  );
+  return arr3;
+};
+
+console.log(fifth(array1, array2));
+console.log(fifth(array2, array1));
