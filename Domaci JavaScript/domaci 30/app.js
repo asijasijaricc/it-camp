@@ -11,9 +11,10 @@ function even(arr) {
     num % 2 === 0;
   });
 
-  arr1.reduce((prev, curr) => {
+  const arr2 = arr1.reduce((prev, curr) => {
     prev + curr;
   });
+  return arr1;
 }
 
-console.log(even(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+console.log(even([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
