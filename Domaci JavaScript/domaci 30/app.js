@@ -6,30 +6,14 @@
 
 // 1.
 
-// function even(arr) {
-//   const arr1 = arr.filter((num) => {
-//     num % 2 === 0;
-//   });
+const numbers = [1, 2, 3, 4];
 
-//   const arr2 = arr1.reduce((prev, curr) => {
-//     prev + curr;
-//   });
-//   return arr1;
-//}
+const sumEvenNumbers = (arr) => {
+  return arr
+    .filter((num) => num % 2 === 0)
+    .map((num) => num * 2)
+    .reduce((prev, curr) => prev + curr);
+  return arr;
+};
 
-// console.log(even([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
-
-// 2.
-
-function upperCase(string) {
-  for (let i = 0; i < string.length; i++) {
-    if (string[i].lowerCase) {
-      return string[i].toUpperCase();
-    } else {
-      return string[i].toLowerCase();
-    }
-  }
-  // return string;
-}
-
-console.log(upperCase("The Quick Brown Fox"));
+console.log(sumEvenNumbers(numbers));
