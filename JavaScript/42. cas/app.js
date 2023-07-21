@@ -60,7 +60,9 @@ function petlja(n) {
 
 petlja(10);
 
-// Napraviti glavnu funkciju koja ispisuje poruku da se radi o glavnoj funkciji, ali ispod toga neka se izvrsi pozivanje callback funkcije koja ima zadatak da izracuna aritmeticku sredinu 3 broja koji predstavljaju argumente te callback funkcije.
+// Napraviti glavnu funkciju koja ispisuje poruku da se radi o glavnoj funkciji,
+//ali ispod toga neka se izvrsi pozivanje callback funkcije
+// koja ima zadatak da izracuna aritmeticku sredinu 3 broja koji predstavljaju argumente te callback funkcije.
 
 const main = (callback) => {
   console.log("Radi se o glavnoj funkciji");
