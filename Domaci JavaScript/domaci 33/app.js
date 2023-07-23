@@ -13,10 +13,17 @@ let person = {
   lenguage: ["Serbian", "English"],
 };
 
-person.setLenguage = function (jezik) {
-  this.jezik += lenguage;
+// person.setlenguage = function (lenguage) {
+//   this.language.push(language);
+// };
+
+// console.log(person.setlenguage("German"));
+
+person.setNickname = function () {
+  let prvi = this.firstName.slice(0, 2);
+  let drugi = this.lastName.slice(0, 2);
+  let nickname = prvi + drugi;
+  return nickname;
 };
 
-console.log(person.setLenguage("German"));
-
-person;
+console.log(person.nickname);
