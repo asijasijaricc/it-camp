@@ -72,7 +72,6 @@ myCar.smanjenjebrzine = function (vrednost) {
 };
 
 myCar.koci = function () {
-  // this.trenutnabrzina - this.trenutnabrzina;
   this.trenutnabrzina = 0;
   return "Ukocili ste";
 };
