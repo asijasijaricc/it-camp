@@ -10,11 +10,11 @@
 let person = {
   firstName: "Asija",
   lastName: "Sijaric",
-  lenguage: ["Serbian", "English"],
+  language: ["Serbian", "English"],
 };
 
 person.setlenguage = function (leng) {
-  this.language = leng;
+  this.language.push(leng);
 };
 
 person.setlenguage("German");
@@ -23,7 +23,7 @@ person.setNickname = function () {
   let prvi = this.firstName.slice(0, 2).toLowerCase();
   let drugi = this.lastName.slice(0, 2).toLowerCase();
   let nickname = prvi + drugi;
-  return nickname;
+  return nickname[0].toUpperCase() + nickname.slice(1);
 };
 
 console.log(person.setNickname());

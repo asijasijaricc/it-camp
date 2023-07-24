@@ -71,6 +71,12 @@ myCar.smanjenjebrzine = function (vrednost) {
   }
 };
 
+myCar.koci = function () {
+  // this.trenutnabrzina - this.trenutnabrzina;
+  this.trenutnabrzina = 0;
+  return "Ukocili ste";
+};
+
 console.log(myCar.trenutnabrzina);
 myCar.povecanjebrzine(80);
 console.log(myCar.trenutnabrzina);
@@ -83,3 +89,4 @@ myCar.smanjenjebrzine(90);
 console.log(myCar.trenutnabrzina);
 console.log(myCar.smanjenjebrzine(100));
 console.log(myCar.trenutnabrzina);
+console.log(myCar.koci());
