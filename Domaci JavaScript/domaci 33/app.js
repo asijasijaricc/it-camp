@@ -13,17 +13,19 @@ let person = {
   lenguage: ["Serbian", "English"],
 };
 
-// person.setlenguage = function (lenguage) {
-//   this.language.push(language);
-// };
+person.setlenguage = function (leng) {
+  this.language = leng;
+};
 
-// console.log(person.setlenguage("German"));
+person.setlenguage("German");
 
 person.setNickname = function () {
-  let prvi = this.firstName.slice(0, 2);
-  let drugi = this.lastName.slice(0, 2);
+  let prvi = this.firstName.slice(0, 2).toLowerCase();
+  let drugi = this.lastName.slice(0, 2).toLowerCase();
   let nickname = prvi + drugi;
   return nickname;
 };
 
-console.log(person.nickname);
+console.log(person.setNickname());
+
+console.log(person);
