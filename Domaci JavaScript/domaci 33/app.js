@@ -3,7 +3,7 @@
 // 1. firstName,
 // 2. lastName,
 // 3. language,
-// 4. setLanguage - metoda za setovanje jezika,
+// 4. addLanguage - metoda za setovanje jezika,
 // 5. setNickName - metoda (svaka osoba ima nadimak sastavljen od prva dva slova
 // imena i prva dva slova prezimena)
 
@@ -13,11 +13,11 @@ let person = {
   language: ["Serbian", "English"],
 };
 
-person.setlenguage = function (leng) {
-  this.language.push(leng);
+person.addlenguage = function (lang) {
+  this.language.push(lang);
 };
 
-person.setlenguage("German");
+person.addlenguage("German");
 
 person.setNickname = function () {
   let prvi = this.firstName.slice(0, 2).toLowerCase();
