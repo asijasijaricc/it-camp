@@ -19,6 +19,26 @@ person.addlenguage = function (lang) {
 
 person.addlenguage("German");
 
+// 1. nacin
+
+person.removelanguage = function (lang) {
+  const position = this.language.indexOf(lang);
+  if (position !== -1) {
+    this.language.splice(position, 1);
+  }
+};
+
+// person.removelanguage("English");
+
+// 2. nacin
+
+person.removelanguage = function (lang) {
+  const newArr = this.language.filter((language) => language !== lang);
+  this.language = newArr;
+};
+
+person.removelanguage("English");
+
 person.setNickname = function () {
   let prvi = this.firstName.slice(0, 2).toLowerCase();
   let drugi = this.lastName.slice(0, 2).toLowerCase();
