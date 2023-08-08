@@ -30,6 +30,14 @@ const automobil = {
 //   Note that the rating values are saved as strings in the object and need to be
 //   converted into numbers before they are used in any mathematical operations.
 
+// Promenljiva watchList sadrži niz objekata sa informacijama
+// o raznim filmovima. Koristite reduce funkciju da biste pronašli prosečnu ocenu IMDB
+// filmova koje je režirao Christopher Nolan. Podsetite se iz prethodnih izazova
+// kako da filtrirate podatke i mapirate ih kako biste izvukli potrebne informacije. Možda ćete morati
+// da kreirate druge promenljive i da vratite prosečnu ocenu iz funkcije getRating.
+// Napomena: vrednosti ocena su sačuvane kao stringovi u objektima i moraju se konvertovati u brojeve
+// pre nego što se koriste u bilo kojim matematičkim operacijama
+
 const watchList = [
   {
     Title: "Inception",
