@@ -165,4 +165,11 @@ const watchList = [
 //  containing the squares of only the positive integers
 //  (decimal numbers are not integers) when an array of real numbers is passed to it.
 //   An example of an array of real numbers is
+
+// Upotpunite kod za funkciju squareList koristeći bilo koju kombinaciju
+// map(), filter() i reduce() funkcija. Funkcija treba da vrati novi niz
+// koji sadrži kvadrate samo pozitivnih celih brojeva
+// (decimalni brojevi nisu celi brojevi) kada joj se prosledi niz realnih brojeva.
+// Primer niza realnih brojeva je
+
 const numbers = [-3, 4.8, 5, 3, -3.2];
