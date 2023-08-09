@@ -33,3 +33,42 @@ console.log(ilhan);
 ilhan.incrementScore();
 
 console.log(ilhan);
+
+setTimeout(() => {
+  console.log("1");
+}, 2000);
+
+setTimeout(() => {
+  console.log("2");
+}, 1000);
+
+setTimeout(() => {
+  console.log("3");
+}, 1000);
+
+console.log("4");
+console.log("5");
+console.log("6");
+console.log("7");
+console.log("8");
+console.log("9");
+console.log("10");
+console.log("11");
+console.log("12");
+console.log("13");
+console.log("14");
+console.log("15");
+console.log("16");
+console.log("17");
+console.log("18");
+console.log("19");
+console.log("20");
+console.log("21");
+console.log("22");
+console.log("23");
+console.log("24");
+console.log("25");
+
+setTimeout(() => {
+  console.log(26);
+}, 950);
