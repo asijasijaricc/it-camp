@@ -173,3 +173,11 @@ const watchList = [
 // Primer niza realnih brojeva je
 
 const numbers = [-3, 4.8, 5, 3, -3.2];
+
+function positive(arr) {
+  let arr2 = arr.filter((br) => br >= 0 && br === Math.floor(br));
+  let arr3 = arr2.map((br) => br * br);
+  return arr3;
+}
+
+console.log(positive(numbers));
