@@ -20,6 +20,15 @@ const automobil = {
 // Za bilo koji objekat koji ima properties: satnaKarta, dnevnaKarta i mesecnaKarta.
 // Nakon toga je primeniti za automobil objekat i ispisati automobil nakon toga.
 
+function povecati(arr) {
+  arr.garaza.satnaKarta *= 1.2;
+  arr.garaza.dnevnaKarta *= 1.2;
+  arr.garaza.mesecnaKartaKarta *= 1.2;
+  return arr;
+}
+
+console.log(povecati(automobil));
+
 //   2.
 //  2. Zadatak
 //  The variable watchList holds an array of objects with information
