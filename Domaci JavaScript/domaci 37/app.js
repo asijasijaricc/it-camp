@@ -20,15 +20,6 @@ const automobil = {
 // Za bilo koji objekat koji ima properties: satnaKarta, dnevnaKarta i mesecnaKarta.
 // Nakon toga je primeniti za automobil objekat i ispisati automobil nakon toga.
 
-function povecati(arr) {
-  arr.garaza.satnaKarta *= 1.2;
-  arr.garaza.dnevnaKarta *= 1.2;
-  arr.garaza.mesecnaKartaKarta *= 1.2;
-  return arr;
-}
-
-console.log(povecati(automobil));
-
 //   2.
 //  2. Zadatak
 //  The variable watchList holds an array of objects with information
@@ -38,14 +29,6 @@ console.log(povecati(automobil));
 //   create other variables, and return the average rating from getRating function.
 //   Note that the rating values are saved as strings in the object and need to be
 //   converted into numbers before they are used in any mathematical operations.
-
-// Promenljiva watchList sadrži niz objekata sa informacijama
-// o raznim filmovima. Koristite reduce funkciju da biste pronašli prosečnu ocenu IMDB
-// filmova koje je režirao Christopher Nolan. Podsetite se iz prethodnih izazova
-// kako da filtrirate podatke i mapirate ih kako biste izvukli potrebne informacije. Možda ćete morati
-// da kreirate druge promenljive i da vratite prosečnu ocenu iz funkcije getRating.
-// Napomena: vrednosti ocena su sačuvane kao stringovi u objektima i moraju se konvertovati u brojeve
-// pre nego što se koriste u bilo kojim matematičkim operacijama
 
 const watchList = [
   {
@@ -174,14 +157,20 @@ const watchList = [
 //  containing the squares of only the positive integers
 //  (decimal numbers are not integers) when an array of real numbers is passed to it.
 //   An example of an array of real numbers is
-
-// Upotpunite kod za funkciju squareList koristeći bilo koju kombinaciju
-// map(), filter() i reduce() funkcija. Funkcija treba da vrati novi niz
-// koji sadrži kvadrate samo pozitivnih celih brojeva
-// (decimalni brojevi nisu celi brojevi) kada joj se prosledi niz realnih brojeva.
-// Primer niza realnih brojeva je
-
 const numbers = [-3, 4.8, 5, 3, -3.2];
+
+// 1.
+
+function povecati(arr) {
+  arr.garaza.satnaKarta *= 1.2;
+  arr.garaza.dnevnaKarta *= 1.2;
+  arr.garaza.mesecnaKartaKarta *= 1.2;
+  return arr;
+}
+
+console.log(povecati(automobil));
+
+// 2.
 
 function positive(arr) {
   let arr2 = arr.filter((br) => br >= 0 && br === Math.floor(br));
@@ -190,3 +179,13 @@ function positive(arr) {
 }
 
 console.log(positive(numbers));
+
+// 3.
+
+function getRating(arr) {
+  let reziser = arr.filter((el) => el.Director === "Christopher Nolan");
+  let ocena = reziser.reduce((curr, prev) => curr + +prev.imdbRating, 0);
+  return ocena;
+}
+
+console.log(getRating(watchList));
