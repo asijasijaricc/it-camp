@@ -33,18 +33,6 @@ const contacts = [
   },
 ];
 
-function lookUpProfile(name, prop) {
-  if (this.firstName === name) {
-    return cont;
-  } else if (!contact.hasOwnProperty(prop)) {
-    return "No such prop";
-  } else {
-    return contact[prop];
-  }
-}
-
-console.log(lookUpProfile("Kristina", "Vos"));
-
 //  2. Zadatak
 // Napraviti funkciju koja mapira neki niz (argument).
 // Ako produkt ima u zalihama vise od 20 treba:
@@ -128,17 +116,3 @@ const products = [
     quantity: 14,
   },
 ];
-
-function isThere(arr) {
-  products.map((product) => {
-    if (products.quantity > 20) {
-      return products.price * 0.8;
-    } else if (products.quantity > 40) {
-      return products.price * 0.6;
-    } else {
-      return product;
-    }
-  });
-}
-
-console.log(isThere(products));
