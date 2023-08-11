@@ -116,3 +116,45 @@ const products = [
     quantity: 14,
   },
 ];
+
+// 1.
+
+function lookUpProfil(arr, name, prop) {
+  const contact = arr.find((contact) => contact.firstName === name);
+
+  if (contact) {
+    if (contact.hasOwnProperty(prop)) {
+      return contact[prop];
+    } else {
+      return "There is no such property";
+    }
+  } else {
+    return "There is no such contact";
+  }
+}
+
+console.log(lookUpProfil(contacts, "Sherlock", "number"));
+console.log(lookUpProfil(contacts, "Sherlock", "hobby"));
+console.log(lookUpProfil(contacts, "Michael", "number"));
+
+// 2.
+
+const discountProducts = (arr) => {
+  arr.map((product) => {
+    if (product.quantity > 40) {
+      return {
+        ...product,
+        price: product.price * 0.6,
+      };
+    } else if (product.quantity > 20) {
+      return {
+        ...product,
+        price: product.price * 0.8,
+      };
+    } else {
+      return product;
+    }
+  });
+};
+
+console.log(discountProducts(products));
