@@ -6,6 +6,13 @@
 // If name does not correspond to any contacts then return the string No such contact.
 // If prop does not correspond to any valid properties of a contact found to match name then return the string No such property.
 
+// Imamo niz objekata koji predstavljaju različite ljude na našim listama kontakata.
+// Funkcija lookUpProfile koja uzima ime i svojstvo (prop) kao argumente je unapred napisana za vas.
+// Funkcija treba da proveri da li je ime stvarno ime kontakta i da li je dato svojstvo (prop) svojstvo tog kontakta.
+// Ako su oba tačna, onda vrati "vrednost" tog svojstva.
+// Ako ime ne odgovara nijednom kontaktu, vratite string Nema takvog kontakta.
+// Ako prop ne odgovara nijednom važećem svojstvu kontakta za koje je pronađeno da odgovara imenu, onda vratite string Nema takvog svojstva
+
 const contacts = [
   {
     firstName: "Akira",
@@ -32,6 +39,18 @@ const contacts = [
     likes: ["JavaScript", "Gaming", "Foxes"],
   },
 ];
+
+function lookUpProfile(name, prezime) {
+  for (let cont of contacts) {
+    if (contacts.firstName === name || contacts.lastName === prezime) {
+      return "There is this cont";
+    } else {
+      return "No such contact";
+    }
+  }
+}
+
+console.log(lookUpProfile("Kristina", "Vos"));
 
 //  2. Zadatak
 // Napraviti funkciju koja mapira neki niz (argument).
@@ -116,3 +135,17 @@ const products = [
     quantity: 14,
   },
 ];
+
+function isThere(arr) {
+  products.map((product) => {
+    if (products.quantity > 20) {
+      return products.price * 0.8;
+    } else if (products.quantity > 40) {
+      return products.price * 0.6;
+    } else {
+      return product;
+    }
+  });
+}
+
+console.log(isThere(products));
