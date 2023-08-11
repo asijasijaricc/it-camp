@@ -33,12 +33,14 @@ const contacts = [
   },
 ];
 
-function lookUpProfile(name, prezime) {
-  for (let cont of contacts) {
-    if (contacts.firstName === name || contacts.lastName === prezime) {
-      return "There is this cont";
+function lookUpProfile(name, prop) {
+  for (let contact of contacts) {
+    if (this.firstName === name) {
+      return cont;
+    } else if (!contact.hasOwnProperty(prop)) {
+      return "No such prop";
     } else {
-      return "No such contact";
+      return contact[prop];
     }
   }
 }
