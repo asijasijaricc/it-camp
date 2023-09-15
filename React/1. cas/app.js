@@ -9,6 +9,7 @@
 // array methods
 // callbacks
 // promises
+// event loop
 // async await
 // closure
 // hosting
@@ -17,6 +18,7 @@
 // DOM manipulation
 // events
 // es6 js
+// htpp & fetch
 
 var a = "";
 console.log(typeof a);
