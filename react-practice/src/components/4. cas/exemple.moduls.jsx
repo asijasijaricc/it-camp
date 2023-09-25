@@ -1,4 +1,5 @@
 import styles from "./main.module.css";
+
 const Moduls = () => {
   return (
     <div>

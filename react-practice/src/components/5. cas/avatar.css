@@ -1,0 +1,29 @@
+.name {
+  width: 25%;
+  height: 60px;
+  border: 2px solid #aeaeae;
+  border-radius: 10px;
+  display: flex;
+  padding: 15px;
+  gap: 18px;
+}
+
+.ime {
+  font-weight: bold;
+  font-size: large;
+}
+
+.name img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.dole {
+  margin-top: -13px;
+}
+
+.marka {
+  color: #aeaeae;
+  font-size: 17px;
+}
