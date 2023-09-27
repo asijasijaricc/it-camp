@@ -1,0 +1,32 @@
+.karta {
+  border: 1px solid grey;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.karta img {
+  width: 70px;
+  height: 70px;
+}
+
+.manja {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.broj {
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.nzm {
+  font-size: larger;
+}
