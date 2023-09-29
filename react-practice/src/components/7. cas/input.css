@@ -1,0 +1,7 @@
+.int {
+  width: 200px;
+  margin: 10px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 3px;
+}

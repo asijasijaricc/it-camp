@@ -1,0 +1,13 @@
+.btn {
+  border: 0;
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.borderBlack {
+  border: 3px solid black;
+}
