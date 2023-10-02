@@ -13,7 +13,7 @@ const Dugme = ({ izgled = "default", text }) => {
         };
     }
   };
-  return <button style={{ razlicito() }}>{text}</button>;
+  return <button style={{ izgled }}>{text}</button>;
 };
 
 export default Dugme;
