@@ -1,0 +1,23 @@
+#card {
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgb(200, 78, 98);
+  margin: 50px;
+  background-color: pink;
+  border-radius: 8px;
+}
+
+.header {
+  background-color: rgb(240, 163, 176);
+  color: rgb(96, 50, 137);
+  border-bottom: 1px solid rgb(221, 141, 154);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dete {
+  color: white;
+  margin-left: 5px;
+}

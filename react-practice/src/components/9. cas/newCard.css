@@ -1,0 +1,29 @@
+.neka {
+  width: 450px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.neka img {
+  width: 450px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.sivo {
+  color: gray;
+  font-size: larger;
+}
+
+.htag {
+  font-size: x-large;
+}
+
+.tekst {
+  font-size: larger;
+}
+
+.neka a {
+  color: blue;
+  text-decoration: none;
+}
