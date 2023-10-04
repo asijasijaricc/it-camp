@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Class8 from "./components/8. cas";
+import Dugme from "./components/domaci 1/dugme";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Class8 />
+    <Dugme type="filled" text="Button" />
   </React.StrictMode>
 );

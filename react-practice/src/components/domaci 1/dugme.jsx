@@ -1,6 +1,6 @@
-const Dugme = ({ izgled = "default", text }) => {
+const Dugme = ({ type, text }) => {
   const razlicito = () => {
-    switch (izgled) {
+    switch (type) {
       case "default":
         return {
           boredColor: "black",
@@ -13,7 +13,7 @@ const Dugme = ({ izgled = "default", text }) => {
         };
     }
   };
-  return <button style={{ izgled }}>{text}</button>;
+  return <button style={{ razlicito }}>{text}</button>;
 };
 
 export default Dugme;
