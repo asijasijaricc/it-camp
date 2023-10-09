@@ -4,6 +4,6 @@ import Class11 from "./components/11. cas";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Class11 num="13123" text="asija" />
+    <Class11 />
   </React.StrictMode>
 );
