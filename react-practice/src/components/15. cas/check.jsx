@@ -56,8 +56,9 @@ const Check = () => {
           onChange={() => {
             if (checked.first) {
               return;
+            } else {
+              setChecked({ ...checked, third: !checked.third });
             }
-            setChecked({ ...checked, third: !checked.third });
           }}
         />
       </label>
