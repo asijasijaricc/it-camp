@@ -1,9 +1,9 @@
-import SimpleForm from "./simpleform";
+import Check from "./check";
 
 const Class15 = () => {
   return (
     <div>
-      <SimpleForm />
+      <Check />
     </div>
   );
 };
