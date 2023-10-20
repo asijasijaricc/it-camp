@@ -1,3 +1,4 @@
+import styles from "./dropdown.css";
 import { useState } from "react";
 
 const DropDown = () => {
@@ -13,15 +14,23 @@ const DropDown = () => {
           }
         }}
       >
-        Click me{" "}
+        Click me
       </p>
       {active === 1 && (
-        <div>
+        <div className="neki">
           <p>1st menu item</p>
+          <hr />
           <p>2nd menu item</p>
+          <hr />
           <p>3rd menu item</p>
         </div>
       )}
+      <div className="nesto">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+          amet.
+        </p>
+      </div>
     </div>
   );
 };
