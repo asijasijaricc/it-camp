@@ -1,9 +1,9 @@
-import Check from "./check";
+import NestedObject from "./nestedobj";
 
 const Class15 = () => {
   return (
     <div>
-      <Check />
+      <NestedObject />
     </div>
   );
 };
