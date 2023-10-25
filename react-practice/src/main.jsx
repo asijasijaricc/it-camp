@@ -1,9 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Class16 from "./components/16. cas";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Class16 />
-  </React.StrictMode>
+  <React.StrictMode></React.StrictMode>
 );
