@@ -9,6 +9,7 @@ const Parent = () => {
       <p>{test}</p>
       <button onClick={() => updateT(test + 1)}>click</button>
       <Child state={test} UpdateS={updateT} />
+      <p>Kraj rada</p>
     </div>
   );
 };
