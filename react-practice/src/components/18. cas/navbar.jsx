@@ -1,59 +1,42 @@
-import styles from "./layout.css";
+import { Link } from "react-router-dom";
+import logo from "./logo.svg";
 
-const Navbar = ({ setPage, children }) => {
+const Navbar = ({ setPage }) => {
   const changeUrl = (path) => {
     const obj = { title: path, url: path };
 
     window.history.pushState(obj, obj.title, obj.url);
   };
+
   return (
-    <div>
-      <div className="header">
-        <div className="logo">
-          <img
-            src="https://www.adobe.com/express/create/logo/media_104b6a549009ec0d7e3d97e311517778f06da073b.jpeg?width=400&format=jpeg&optimize=medium"
-            alt=""
-          />
-        </div>
-        <div className="naslov">
-          <h1>Tail block</h1>
-        </div>
-        <div className="linkovi">
-          <p
-            onClick={() => {
-              //   setPage(0);
-              changeUrl("home");
-            }}
-          >
-            Home
-          </p>
-          <p
-            onClick={() => {
-              //   setPage(2);
-              changeUrl("product");
-            }}
-          >
-            Product
-          </p>
-          <p
-            onClick={() => {
-              //   setPage(3);
-              changeUrl("contact");
-            }}
-          >
-            Contact
-          </p>
-          <p
-            onClick={() => {
-              //   setPage(4);
-              changeUrl("about");
-            }}
-          >
-            About
-          </p>
-        </div>
+    <nav
+      style={{
+        display: "flex",
+        height: 80,
+        background: "purple",
+        alignItems: "center",
+        position: "relative",
+        border: "2px solid black",
+        borderRadius: "8px",
+      }}
+    >
+      <img src={logo} alt="" width={40} height={40} />
+
+      <div style={{ display: "flex" }}>
+        <Link style={{ padding: "0 20px" }} to={"/home"}>
+          Home
+        </Link>
+        <Link style={{ padding: "0 20px" }} to={"/product"}>
+          Product
+        </Link>
+        <Link style={{ padding: "0 20px" }} to={"/about"}>
+          About
+        </Link>
+        <Link style={{ padding: "0 20px" }} to={"/contact"}>
+          Contact
+        </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 
