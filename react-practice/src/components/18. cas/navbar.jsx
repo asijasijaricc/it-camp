@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "./logo.svg";
 
-const Navbar = ({ setPage }) => {
+const Navbar = () => {
   const changeUrl = (path) => {
     const obj = { title: path, url: path };
 

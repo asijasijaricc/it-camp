@@ -1,21 +1,58 @@
-import { useState } from "react";
-import About from "./about";
-import Contact from "./contact";
-import Home from "./home";
-import Layout from "./layout";
-import Product from "./product";
+import About from "./About";
+import Contact from "./Contact";
+import Home from "./Home";
+import Layout from "./Layout";
+import Product from "./Product";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
+  },
+  {
+    path: "/home",
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
+  },
+  {
+    path: "/product",
+    element: (
+      <Layout>
+        <Product />
+      </Layout>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <Layout>
+        <About />
+      </Layout>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <Layout>
+        <Contact />
+      </Layout>
+    ),
+  },
+]);
 
 const Class18 = () => {
-  const [page, setPage] = useState(0);
-  const url = window.location.pathnameh;
   return (
     <div>
-      <Layout setPage={setPage}>
-        {url === "/home" && <Home />}
-        {url === "/product" && <Product />}
-        {url === "/contact" && <Contact />}
-        {url === "/about" && <About />}
-      </Layout>
+      <RouterProvider router={router} />
     </div>
   );
 };

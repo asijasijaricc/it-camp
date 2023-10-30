@@ -2,14 +2,12 @@ import styles from "./layout.css";
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 
-const Layout = ({ children, setPage }) => {
+const Layout = ({ children }) => {
   return (
     <div>
-      <Navbar setPage={setPage} />
+      <Navbar />
       <Sidebar />
-      <div className="prop">
-        <p>{children}</p>
-      </div>
+      <div className="prop">{children}</div>
     </div>
   );
 };
