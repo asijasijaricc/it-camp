@@ -8,7 +8,7 @@ const Baner = ({ slika }) => {
       }}
     >
       <img
-        style={{ width: "1200px", height: "400px", borderRadius: "8px" }}
+        style={{ width: "1200px", height: "300px", borderRadius: "8px" }}
         src={slika}
         alt=""
       />

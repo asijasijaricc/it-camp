@@ -1,7 +1,7 @@
 const Text = ({ text }) => {
   return (
     <div>
-      <p>{text}</p>
+      <p style={{ fontSize: "20px" }}>{text}</p>
     </div>
   );
 };
