@@ -52,8 +52,8 @@ const Card2 = () => {
                   }}
                 >
                   <Color />
-                  <Color />
-                  <Color />
+                  <Color backgroundColor="blue" />
+                  <Color backgroundColor="grey" />
                 </div>
               </div>
               <div style={{ display: "flex" }}>
