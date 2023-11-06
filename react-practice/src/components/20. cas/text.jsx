@@ -9,6 +9,8 @@ const Text = ({ type = "h1", text, color, bold = false }) => {
         return {};
       case "normal":
         return { fontSize: 21 };
+      case "price":
+        return { fontSize: 21 };
     }
   };
   const pStyle = { ...getType(), color, fontWeight: bold ? 700 : 400 };

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "./button";
 import Color from "./color";
 import Divider from "./divider";
@@ -8,7 +9,8 @@ import Srce from "./srce";
 import Star from "./star";
 import Text from "./text";
 
-const Card2 = () => {
+const Card2 = (props) => {
+  const [img, setImg] = useState(props.data.imgs.white);
   return (
     <div
       style={{
@@ -19,11 +21,11 @@ const Card2 = () => {
       }}
     >
       <div>
-        <Picture slika="https://images.unsplash.com/photo-1526547541286-73a7aaa08f2a?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D" />
+        <Picture slika={img} />
       </div>
       <div style={{ width: "600px", marginLeft: "50px" }}>
-        <Text type="h4" color="gray" text="BRAND NAME" />
-        <Text type="h1" text="The Catcher in the Rye" bold />
+        <Text type="h4" color="gray" text="Brand Name" />
+        <Text type="h1" text={props.data.brandName} bold />
         <div>
           <div
             style={{
@@ -32,14 +34,11 @@ const Card2 = () => {
               gap: "12px",
             }}
           >
-            <Star value={3} />
-            <Text type="normal" text="4 Reviews" />
+            <Star value={props.data.reviews} />
+            <Text type="normal" text={props.data.reviewsCount + "Reviews"} />
             <Icons />
           </div>
-          <Text
-            type="normal"
-            text="Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan."
-          />
+          <Text type="normal" text={props.data.description} />
           <div>
             <div style={{ display: "flex", gap: "30px" }}>
               <div style={{ display: "flex" }}>
@@ -51,15 +50,24 @@ const Card2 = () => {
                     display: "flex",
                   }}
                 >
-                  <Color />
-                  <Color backgroundColor="blue" />
-                  <Color backgroundColor="grey" />
+                  <Color
+                    backgroundColor="white"
+                    onClick={() => setImg(props.data.imgs.white)}
+                  />
+                  <Color
+                    backgroundColor="blue"
+                    onClick={() => setImg(props.data.imgs.blue)}
+                  />
+                  <Color
+                    backgroundColor="grey"
+                    onClick={() => setImg(props.data.imgs.grey)}
+                  />
                 </div>
               </div>
               <div style={{ display: "flex" }}>
                 <Text type="normal" text="Size" />
                 <div style={{ marginTop: "16px", marginLeft: "8px" }}>
-                  <Size />
+                  <Size list={props.data.sizes} />
                 </div>
               </div>
             </div>
@@ -67,7 +75,7 @@ const Card2 = () => {
             <div
               style={{ display: "flex", alignItems: "center", gap: "410px" }}
             >
-              <Text type="normal" text="$58.00" bold />
+              <Text type="price" text={props.data.price} bold />
               <div style={{ display: "flex", alignItems: "center" }}>
                 <Button tekst="Button" />
                 <Srce tekstic="♡" />
