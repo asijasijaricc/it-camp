@@ -1,6 +1,6 @@
 const Size = (props) => {
   return (
-    <select>
+    <select style={{ width: "50px", height: "40px", fontSize: "16px" }}>
       {props?.list &&
         props.list.length &&
         props.list.map((element, index) => (
