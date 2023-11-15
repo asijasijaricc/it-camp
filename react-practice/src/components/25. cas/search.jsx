@@ -8,7 +8,7 @@ const Search = () => {
 
   const getQuote = async () => {
     try {
-      let apiURL = "https://api.quotable.io/random";
+      let apiURL = "https://api.quotable.io/search/quotes";
 
       if (minLength !== "" && minLength !== "0") {
         apiURL += "?minLength=" + minLength;

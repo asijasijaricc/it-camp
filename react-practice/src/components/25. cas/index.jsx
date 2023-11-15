@@ -4,7 +4,7 @@ import Search from "./search";
 const Class25 = () => {
   return (
     <div>
-      {/* <Fetch /> */}
+      <Fetch />
       <Search />
     </div>
   );
