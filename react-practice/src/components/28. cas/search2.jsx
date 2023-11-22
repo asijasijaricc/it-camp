@@ -128,7 +128,7 @@ return (
         onKeyDown();
       }}
     />
-    <button onClick={getQuoteLocal}>Get quote</button>
+    <button onClick={getQuoteLocal()}>Get quote</button>
 
     <div>
       {data && data.results?.length === 0 && <p>No quotes found</p>}
