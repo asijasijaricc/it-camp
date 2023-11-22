@@ -1,24 +1,14 @@
-import { useContext } from "react";
-import { MyContext } from "./samplecontext";
-import MyComponent from "./mycomponent";
+import Tabs from "./tabs";
+import TabsItem from "./tabsitem";
 
 const Class29 = () => {
-  const { test, count, setCount, nesto, setNesto } = useContext(MyContext);
-  console.log(test);
   return (
     <div>
-      {test}
-      <MyComponent />
-      <button
-        style={{ margin: "5px" }}
-        onClick={() => {
-          setCount(count + 1);
-        }}
-      >
-        counter
-      </button>
-      {count}
-      {nesto}
+      <Tabs>
+        <TabsItem title="tab1" tabKey={0} />
+        <TabsItem title="tab2" tabKey={1} />
+        <TabsItem title="tab3" tabKey={2} />
+      </Tabs>
     </div>
   );
 };
