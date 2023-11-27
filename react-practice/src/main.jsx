@@ -1,12 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Class30 from "./components/30. cas";
-import ContextProvider from "./components/30. cas/contextProvider";
+
+import Class31 from "./components/31. cas";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ContextProvider>
-      <Class30 />
-    </ContextProvider>
+    <Class31 />
   </React.StrictMode>
 );

@@ -31,7 +31,7 @@ const ContextProvider = (props) => {
   }
 
   return (
-    <UserContext.Provider value={{ user }}>
+    <UserContext.Provider value={{ user, setUser }}>
       {props.children}
     </UserContext.Provider>
   );
