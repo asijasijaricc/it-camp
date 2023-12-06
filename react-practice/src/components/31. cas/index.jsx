@@ -1,12 +1,21 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+import Register from "./Register";
 import Login from "./login";
 import HomePage from "./homepage";
-import Register from "./register";
+import UserContextProvider from "./contextprovider";
 
 const router = createBrowserRouter([
-  { path: "/", element: <HomePage /> },
-  { path: "/register", element: <Register /> },
+  {
+    path: "/",
+    element: (
+      <UserContextProvider>
+        <HomePage />
+      </UserContextProvider>
+    ),
+  },
   { path: "/login", element: <Login /> },
+  { path: "/register", element: <Register /> },
 ]);
 
 const Class31 = () => {
@@ -16,5 +25,4 @@ const Class31 = () => {
     </div>
   );
 };
-
 export default Class31;

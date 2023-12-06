@@ -1,6 +1,15 @@
-import { useState } from "react";
+// mora da ima dva inputa i validaciju tih inputa
+// inputi su email i password
+// validacija za email je da je to validan email
+// i mora da ima login button koji loguje korisnika
 
-const Login = () => {
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+// za napredne implementirati login preko auth rute na dummy json vebsajtu
+
+function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
 
@@ -8,10 +17,33 @@ const Login = () => {
   const [passwordError, setPasswordError] = useState("");
 
   function isEmailValid(email) {
+    // Regular expression for a simple email validation
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
     return emailRegex.test(email);
   }
+
+  const loginAction = async (formEmail, formPassword) => {
+    try {
+      const response = await fetch("https://dummyjson.com/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          username: formEmail,
+          password: formPassword,
+          // expiresInMins: 60, // optional
+        }),
+      });
+
+      const data = await response.json();
+
+      localStorage.setItem("token", data.token);
+
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const handleLogin = async () => {
     let valid = true;
@@ -24,72 +56,28 @@ const Login = () => {
     }
 
     if (password.length < 8) {
-      setPasswordError("password wrong");
+      setPasswordError("Password wrong");
       valid = false;
     } else {
       setPasswordError("");
     }
 
-    if (valid) {
-      // nest
-    }
+    // if (valid) {
+    loginAction(email, password);
+    // }
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: "300px",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "270px",
-          height: "400px",
-          border: "none",
-          backgroundColor: "#bae8e8",
-          padding: "20px",
-          borderRadius: "10px",
-        }}
-      >
-        <h1 style={{ color: "#24527a" }}>Login now !!</h1>
-        <h3 style={{ color: "#5dacbd" }}>Email</h3>
-        <input
-          type="text"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        {emailError && <p style={{ color: "red" }}>{emailError}</p>}
-        <h3 style={{ color: "#5dacbd" }}>Password</h3>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}
-        <button
-          style={{
-            marginTop: "25px",
-            width: "120px",
-            height: "23px",
-            backgroundColor: "#e3f6f5",
-            borderColor: "#e3f6f5",
-            borderRadius: "7px",
-            color: "#24527a",
-          }}
-          onClick={handleLogin}
-        >
-          Login
-        </button>
-      </div>
+    <div>
+      <input value={email} onChange={(e) => setEmail(e.target.value)} />
+      {emailError && <p>{emailError}</p>}
+
+      <input value={password} onChange={(e) => setPassword(e.target.value)} />
+      {passwordError && <p>{passwordError}</p>}
+
+      <button onClick={handleLogin}>Login</button>
     </div>
   );
-};
+}
 
 export default Login;

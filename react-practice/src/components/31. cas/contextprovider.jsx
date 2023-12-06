@@ -1,30 +1,42 @@
+//napraviti user context koji ima pocetnu vredonst za objekat
+// dodati usercontext.provider unutar ove komponente
+// obati njime decu ove komponente
+// napraviti user state koji saljete preko contexta
+
 import { createContext, useEffect, useState } from "react";
 
-export const UserContext = createContext({});
+const UserContext = createContext({});
 
-const ContextProvider = (props) => {
+const UserContextProvider = (props) => {
   const [user, setUser] = useState();
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const loginUser = async () => {
+    const fetchUser = async () => {
+      const token = localStorage.getItem("token");
       try {
-        const response = await fetch("https://dummyjson.com/users/1");
-        const responseData = await response.json();
+        const response = await fetch("https://dummyjson.com/auth/users/1", {
+          method: "GET" /* or POST/PUT/PATCH/DELETE */,
+          headers: {
+            Authorization: "Bearer " + token,
+            "Content-Type": "application/json",
+          },
+        });
+        const data = await response.json();
 
-        setUser(responseData);
-        setLoading(false);
+        if (data.message === "Invalid/Expired Token!") {
+          throw new Error();
+        }
+
+        setUser(data);
       } catch (error) {
-        console.log("error");
-        setLoading(false);
+        console.log(error);
       }
     };
-    loginUser();
-  }, []);
 
-  if (loading) {
-    return <div>loading</div>;
-  }
+    if (!user) {
+      fetchUser();
+    }
+  }, []);
 
   if (!user) {
     return <div>not authorized</div>;
@@ -37,4 +49,4 @@ const ContextProvider = (props) => {
   );
 };
 
-export default ContextProvider;
+export default UserContextProvider;
