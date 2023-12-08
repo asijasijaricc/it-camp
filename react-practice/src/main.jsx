@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import Class31 from "./components/31. cas";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

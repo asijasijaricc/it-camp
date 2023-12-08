@@ -1,14 +1,11 @@
-//napraviti user context koji ima pocetnu vredonst za objekat
-// dodati usercontext.provider unutar ove komponente
-// obati njime decu ove komponente
-// napraviti user state koji saljete preko contexta
-
 import { createContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const UserContext = createContext({});
+export const UserContext = createContext({});
 
 const UserContextProvider = (props) => {
   const [user, setUser] = useState();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -24,6 +21,7 @@ const UserContextProvider = (props) => {
         const data = await response.json();
 
         if (data.message === "Invalid/Expired Token!") {
+          navigate("/login");
           throw new Error();
         }
 
@@ -39,7 +37,18 @@ const UserContextProvider = (props) => {
   }, []);
 
   if (!user) {
-    return <div>not authorized</div>;
+    return (
+      <div>
+        <p>not authorized</p>
+        <button
+          onClick={() => {
+            navigate("/login");
+          }}
+        >
+          Go to login page
+        </button>
+      </div>
+    );
   }
 
   return (

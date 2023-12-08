@@ -1,52 +1,35 @@
-const Register = () => {
+import { Navigate } from "react-router-dom";
+
+function Register() {
+  return <div>Register</div>;
+  const handleRegister = async () => {
+    try {
+      const response = await fetch("https://dummyjson.com/users/add", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: "Muhammad",
+          lastName: "Ovi",
+          age: 250,
+        }),
+      });
+      const data = await response.json();
+      
+      Navigate("/login");
+
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: "260px",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "330px",
-          height: "450px",
-          border: "none",
-          backgroundColor: "#bae8e8",
-          padding: "20px",
-          borderRadius: "10px",
-        }}
-      >
-        <h1 style={{ color: "#24527a" }}>Create your account !!</h1>
-        <h3 style={{ color: "#5dacbd" }}>Name</h3>
-        <input type="text" />
-        <h3 style={{ color: "#5dacbd" }}>Email</h3>
-        <input type="text" />
-        <h3 style={{ color: "#5dacbd" }}>Password</h3>
-        <input type="text" />
-        <h3 style={{ color: "#5dacbd" }}>Confirm password</h3>
-        <input type="text" />
-        <br />
-        <button
-          style={{
-            width: "120px",
-            height: "23px",
-            backgroundColor: "#e3f6f5",
-            borderColor: "#e3f6f5",
-            borderRadius: "7px",
-            color: "#24527a",
-          }}
-        >
-          Register
-        </button>
-      </div>
+    <div>
+      <input type="text" placeholder="email" />
+      <input type="password" placeholder="password" />
+      <button onClick={handleRegister}>Register</button>
     </div>
   );
-};
+}
 
 export default Register;
