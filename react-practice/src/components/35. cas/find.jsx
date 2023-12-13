@@ -32,6 +32,8 @@ function Find() {
     console.log(e.target.innerText);
   }, []);
 
+  console.log(first);
+
   return (
     <div>
       <input
