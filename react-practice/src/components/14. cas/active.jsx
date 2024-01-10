@@ -17,7 +17,7 @@ const Active = () => {
         red
       </p>
       <p
-        style={{ background: active === 2 ? "green" : "white" }}
+        tyle={{ background: active === 2 ? "green" : "white" }}
         onClick={() => {
           if (active === 2) {
             setActive(0);
